@@ -1,0 +1,49 @@
+body {
+	background-color: #cc9900;
+	font-family: 'Enriqueta', serif;
+	background-image: url('golddots.png');
+   background-repeat: none;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  	background-size: cover;
+  	overflow-x:hidden;
+}
+
+
+.jumbotron {
+	background-color:#536879;
+	color: white;
+	font-family: 'Cedarville Cursive', cursive;
+	/*border: 1px solid white;*/
+}
+
+.panel {
+	background-color: white;
+	color: black;
+	border: none;
+}
+
+
+.panel-heading {
+	background-color: #536879;
+	color: white;
+
+}
+
+.footer{
+  background-color: #536879;
+  position: relative;
+  top: 25px;
+  color: white;
+  font-size: 10px;
+  font-family: 'Cedarville Cursive', cursive;
+  padding: 5px;
+
+}
+
+.footer a {
+	color: white;
+}
+

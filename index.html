@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Countdown</title>
+    <link href="assets/reset.css" rel="stylesheet" type="text/css">
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="assets/default.css">
+<link rel="stylesheet" type="text/css" href="assets/default.date.css">
+<link rel="stylesheet" type="text/css" href="assets/default.time.css">
+
+</head>
+<body>
+<div class="container">
+
+<div class="jumbotron">
+		<h1 class="text-center"><i class=""></i> 
+		Event Countdown</h1>
+</div>
+
+
+
+
+	<div class="row">
+		<div class="col-sm-12">
+		<br>
+
+			<!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+			<div class="panel">
+
+				<!-- Panel Heading for the retrieved articles box -->
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><i class="glyphicon glyphicon-glass"></i>   Events</strong></h3>
+				</div>
+
+				<!-- This main panel will hold each of the resulting articles -->
+				<div class="panel-body" id="wellSection">
+					<table class="table table-striped ">
+					   <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Countdown</th>
+                </tr>
+            </thead>
+
+						<div class="eventData"></div>
+
+
+           </table>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<div class="row">
+		<div class="col-sm-12">
+		<br>
+			<!-- First panel is for handling the search parameters -->
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><i class="glyphicon glyphicon-certificate"></i>   Add an Event:</strong></h3>
+				</div>
+				<div class="panel-body">
+
+					<!-- Here we create an HTML Form for handling the inputs-->
+					<form role="form">
+
+				  	  <!-- Here we create the text box for capturing the search term-->
+					  <div class="form-group">
+					    <label for="search">Name:</label>
+					    <input type="text" class="form-control" id="eventName">
+					  </div>
+
+					  <!-- Here we capture the number of records that the user wants to retrieve  -->
+						<div class="form-group">
+						<label for="search">Date:</label>
+                <div class='input-group date'>
+                    <input type="text" class="form-control datepicker" id="eventDate">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+				  	  <!-- Here we capture the Start Year Parameter-->
+					  <div class="form-group">
+					    <label for="search">Time:</label>
+					        <div class='input-group time'>
+                    <input type="text" class="form-control timepicker" id="eventTime">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+					  </div>
+
+				  	  <!-- Here we capture the End Year Parameter -->
+					  <div class="form-group">
+					    <label for="search">Location:</label>
+					    <input type="text" class="form-control" id="eventLocation">
+					  </div>
+
+					  <!-- Here we have our final submit button -->
+					  <button type="submit" class="btn btn-default" id="runSearch"><i class="glyphicon glyphicon-plus"></i> 
+					  	Add Event</button>
+  					<button type="button" class="btn btn-default" id="clearAll"><i class="glyphicon glyphicon-trash"></i> 
+  					  	Clear</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	
+
+</div>
+<footer>
+	<div class="footer text-center">
+  	<span class="copyright"><a href=
+            "https://www.kristingumbert.com">Kristin J. Gumbert</a> | 2016</span>
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js">
+    </script> 
+    <script src="assets/script.js">
+    </script>
+    <script type="text/javascript" src="assets/js/picker.js"> </script>
+<script type="text/javascript" src="assets/js/picker.time.js"> </script>
+<script type="text/javascript" src="assets/js/picker.date.js"> </script>
+<script type="text/javascript" src="assets/js/main.js"> </script>
+
+</body>
+</html>
