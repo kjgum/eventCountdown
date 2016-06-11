@@ -33,17 +33,17 @@ body {
 }
 
 .footer{
-  background-color: #536879;
+  background-color: ;
   position: relative;
   top: 25px;
-  color: white;
-  font-size: 10px;
+  color: #536879;
+  font-size: 11px;
   font-family: 'Cedarville Cursive', cursive;
   padding: 5px;
 
 }
 
 .footer a {
-	color: white;
+	color: #536879;
 }
 
